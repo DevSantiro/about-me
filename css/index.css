@@ -1,0 +1,59 @@
+body {
+    height: 100vh;
+    width:  100vw;
+}
+
+.main {
+    display: grid;
+
+    height: 100%;
+    width: 100%;
+
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr;
+    background-color: rgb(215, 217, 250);
+}
+
+.apresentacao {
+    background-color:#040608;
+    grid-row: 1fr;
+    grid-column: 1fr;
+    height: 100%;
+}
+
+.conteudo_principal {
+    background-color: rgb(126 60 231 / 98%);
+    grid-row: 100%;
+    grid-column: 100%;
+
+    display: flex;
+    align-items: center;
+}
+
+.conteudo_principal > div {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Games', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+#nome {
+    color: white;
+}
+
+#texto_1 {
+    color: white;
+    font-size: 6em;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+}
+
+#frase_1 {
+    color: white;
+}
