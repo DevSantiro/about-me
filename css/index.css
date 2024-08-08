@@ -54,6 +54,7 @@ body {
     width: 100%;
     text-align: center;
     font-weight: 400;
+    transition: font-size 0.5s ease;
 }
 
 #frase_1 {
@@ -61,7 +62,7 @@ body {
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1200px) {
     .main {
         grid-template-columns: 1fr;
     }
@@ -69,6 +70,10 @@ body {
       display: none;
     }
     .conteudo_principal {
-        background-color:#040608;
+        background-color: #040608;
+    }
+
+    #texto_1 {
+        font-size: 3em; /* Ajuste para tamanhos de tela menores */
     }
   }
